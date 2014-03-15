@@ -245,6 +245,10 @@ public class XmlConfiguration {
         valueMap.put(key, value);
     }
 
+    public String getXmlConfigFilePath() {
+        return xmlConfigFilePath;
+    }
+
     /**
      * Set RescourceLoader
      *
