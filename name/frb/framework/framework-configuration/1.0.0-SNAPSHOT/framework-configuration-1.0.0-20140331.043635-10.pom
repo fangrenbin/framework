@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>name.frb.framework</groupId>
+        <artifactId>framework-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>name.frb.framework</groupId>
+    <artifactId>framework-configuration</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>framework-configuration</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>3.1.1.RELEASE</spring.version>
+        <github.global.server>github</github.global.server>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <artifactId>commons-lang</artifactId>
+            <groupId>commons-lang</groupId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
+
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>internal.repo</id>-->
+            <!--<name>Temporary Staging Repository</name>-->
+            <!--<url>file://${project.build.directory}/mvn-repo</url>-->
+        <!--</repository>-->
+    <!--</distributionManagement>-->
+
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>com.github.github</groupId>-->
+                <!--<artifactId>site-maven-plugin</artifactId>-->
+                <!--<version>0.8</version>-->
+                <!--<configuration>-->
+                    <!--<message>Maven artifacts for ${project.version}</message>-->
+                    <!--&lt;!&ndash; git commit message &ndash;&gt;-->
+                    <!--<noJekyll>true</noJekyll>-->
+                    <!--&lt;!&ndash; disable webpage processing &ndash;&gt;-->
+                    <!--<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>-->
+                    <!--&lt;!&ndash; matches distribution management repository url above &ndash;&gt;-->
+                    <!--<branch>refs/heads/mvn-repo</branch>-->
+                    <!--&lt;!&ndash; remote branch name &ndash;&gt;-->
+                    <!--<includes>-->
+                        <!--<include>**/*</include>-->
+                    <!--</includes>-->
+                    <!--<repositoryName>framework</repositoryName>-->
+                    <!--&lt;!&ndash; github repo name &ndash;&gt;-->
+                    <!--<repositoryOwner>fangrenbin</repositoryOwner>-->
+                    <!--&lt;!&ndash; github username &ndash;&gt;-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--&lt;!&ndash; run site-maven-plugin's 'site' target as part of the build's normal-->
+                        <!--'deploy' phase &ndash;&gt;-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>site</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>deploy</phase>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+            <!--&lt;!&ndash; upload source &ndash;&gt;-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-source-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>attach-sources</id>-->
+                        <!--<goals>-->
+                            <!--<goal>jar</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+</project>
