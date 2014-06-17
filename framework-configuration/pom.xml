@@ -9,7 +9,7 @@
 
     <groupId>name.frb.framework</groupId>
     <artifactId>framework-configuration</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>framework-configuration</name>
     <url>http://maven.apache.org</url>
 

@@ -5,7 +5,7 @@
     <groupId>name.frb.framework</groupId>
     <artifactId>framework-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>framework-parent</name>
     <url>http://maven.apache.org</url>
 
@@ -88,6 +88,6 @@
         <connection>scm:git:git@github.com:fangrenbin/framework.git</connection>
         <developerConnection>scm:git:git@github.com:fangrenbin/framework.git</developerConnection>
         <url>https://github.com/fangrenbin/framework</url>
-      <tag>v1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
